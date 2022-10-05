@@ -12,7 +12,9 @@
           Advancing responsible & fair homesharing in Winnipeg Manitoba through
           advocacy & education
         </h3>
-        <button class="btn btn-neutral btn-round">JOIN US -></button>
+        <button class="btn btn-neutral btn-round" [routerLink]="['/joinus']">
+          JOIN US ->
+        </button>
       </div>
     </div>
   </div>
@@ -30,7 +32,7 @@
             sex, religion, familial status, sexual orientation, or national
             origin.
           </h5>
-          <a href="#" class="underline">BECOME A MEMBER -></a>
+          <a [routerLink]="'/joinus'" class="underline">BECOME A MEMBER -></a>
         </div>
       </div>
       <div class="separator separator-primary"></div>
@@ -62,7 +64,6 @@
               advocacy of property owner rights, enforcement of reasonable
               regulations, and responsible conduct within our neighborhoods.
             </p>
-            <a href="#" class="underline">MEET OUR FRIENDS -></a>
           </div>
         </div>
       </div>
@@ -75,21 +76,25 @@
         <div>
           <h2>Latest News</h2>
 
-          <a href="#">VISIT OUR BLOG -></a>
+          <a
+            href="https://www.facebook.com/groups/1884922571692328"
+            target="_blank"
+            >VISIT OUR FACEBOOK -></a
+          >
         </div>
       </div>
       <div class="col-md-4 col-sm-12 second">
         <div>
           <h2>Join MASTRO</h2>
 
-          <a href="#">BECOME A MEMBER, FRIEND, OR PARTNER -></a>
+          <a [routerLink]="'/joinus'">BECOME A MEMBER, FRIEND, OR PARTNER -></a>
         </div>
       </div>
       <div class="col-md-4 col-sm-12 third">
         <div>
           <h2>Donate Today</h2>
 
-          <a href="#">SUPPORT OUR EFFORTS -></a>
+          <a [routerLink]="'/donate'">SUPPORT OUR EFFORTS -></a>
         </div>
       </div>
     </div>

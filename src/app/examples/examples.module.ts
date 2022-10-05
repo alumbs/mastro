@@ -21,6 +21,7 @@ import { RegisterComponent } from './register/register.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { JoinusComponent } from './joinus/joinus.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { JoinusComponent } from './joinus/joinus.component';
         AngularMultiSelectModule,
         FormsModule,
         ImageUploadModule,
-        GoogleMapsModule
+        GoogleMapsModule,
+        RouterModule
     ],
     declarations: [
         ExamplesComponent,
