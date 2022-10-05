@@ -16,19 +16,19 @@
             "main": "src/main.ts",
             "tsConfig": "src/tsconfig.app.json",
             "polyfills": "src/polyfills.ts",
-            "allowedCommonJsDependencies": ["nouislider", "rellax", "rxjs", "@tweenjs/tween.js"],
-            "assets": [
-              "src/assets",
-              "src/favicon.ico"
+            "allowedCommonJsDependencies": [
+              "nouislider",
+              "rellax",
+              "rxjs",
+              "@tweenjs/tween.js"
             ],
+            "assets": ["src/assets", "src/favicon.ico"],
             "styles": [
               "src/styles.scss",
               "src/assets/sass/now-ui-kit.scss",
               "src/assets/sass/demo.scss"
             ],
-            "scripts": [
-              "node_modules/rellax/rellax.min.js"
-            ]
+            "scripts": ["node_modules/rellax/rellax.min.js"]
           },
           "configurations": {
             "production": {
@@ -91,28 +91,30 @@
             "karmaConfig": "./karma.conf.js",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.spec.json",
-            "scripts": [
-              "node_modules/rellax/rellax.min.js"
-            ],
+            "scripts": ["node_modules/rellax/rellax.min.js"],
             "styles": [
               "src/styles.scss",
               "src/assets/sass/now-ui-kit.scss",
               "src/assets/sass/demo.scss"
             ],
-            "assets": [
-              "src/assets",
-              "src/favicon.ico"
-            ]
+            "assets": ["src/assets", "src/favicon.ico"]
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "src/tsconfig.app.json",
-              "src/tsconfig.spec.json"
-            ],
+            "tsConfig": ["src/tsconfig.app.json", "src/tsconfig.spec.json"],
             "exclude": []
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "now-ui-kit-pro-angular:build:production",
+            "firebaseProject": "mastro-d2e17",
+            "firebaseHostingSite": "mastro-d2e17"
           }
         }
       }
@@ -132,9 +134,7 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "e2e/tsconfig.e2e.json"
-            ],
+            "tsConfig": ["e2e/tsconfig.e2e.json"],
             "exclude": []
           }
         }
@@ -145,7 +145,7 @@
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
-      "styleext": "scss"
+      "style": "scss"
     },
     "@schematics/angular:directive": {
       "prefix": "app"

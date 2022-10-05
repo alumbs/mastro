@@ -1,129 +1,161 @@
 <div class="wrapper">
-    <div class="page-header page-header-small">
-        <div class="page-header-image rellax-header" data-rellax-speed="-8" style="background-image:  url('assets/img/bg45.jpg');">
+  <div class="page-header page-header-small">
+    <div
+      class="page-header-image rellax-header"
+      data-rellax-speed="-8"
+      style="background-image: url('assets/img/bg45.jpg')"
+    ></div>
+    <div class="content-center">
+      <div class="row">
+        <div class="col-md-8 ml-auto mr-auto">
+          <h1 class="title">Contact Us</h1>
         </div>
+      </div>
     </div>
-    <div class="main">
-        <div class="contact-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-5 ml-auto mr-auto">
-                        <h2 class="title">Send us a message</h2>
-                        <p class="description">You can contact us with anything related to our Products. We'll get in touch with you as soon as possible.
-                            <br>
-                            <br>
-                        </p>
-                        <form role="form" id="contact-form" method="post">
-                            <label>Your name</label>
-                            <div class="input-group" [ngClass]="{'input-group-focus':focus===true}">
-                              <div class="input-group-prepend">
-                                  <span class="input-group-text"><i class="now-ui-icons users_circle-08"></i></span>
-                              </div>
-                                <input type="text" class="form-control" placeholder="Your Name..."   (focus)="focus=true" (blur)="focus=false">
-                            </div>
-                            <label>Email address</label>
-                            <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
-                              <div class="input-group-prepend">
-                                  <span class="input-group-text"><i class="now-ui-icons ui-1_email-85"></i></span>
-                              </div>
-                                <input type="email" class="form-control" placeholder="Email Here..."   (focus)="focus1=true" (blur)="focus1=false">
-                            </div>
-                            <label>Phone</label>
-                            <div class="input-group" [ngClass]="{'input-group-focus':focus2===true}">
-                              <div class="input-group-prepend">
-                                  <span class="input-group-text">  <i class="now-ui-icons tech_mobile"></i></span>
-                              </div>
-                                <input type="text" placeholder="Number Here..." class="form-control"   (focus)="focus2=true" (blur)="focus2=false">
-                            </div>
-                            <div class="form-group">
-                                <label>Your message</label>
-                                <textarea name="message" class="form-control" id="message" rows="6"></textarea>
-                            </div>
-                            <div class="submit text-center">
-                                <input type="submit" class="btn btn-primary btn-raised btn-round" value="Contact Us" />
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-md-5 ml-auto mr-auto">
-                        <div class="info info-horizontal mt-5">
-                            <div class="icon icon-primary">
-                                <i class="now-ui-icons location_pin"></i>
-                            </div>
-                            <div class="description">
-                                <h4 class="info-title">Find us at the office</h4>
-                                <p> Bld Mihail Kogalniceanu, nr. 8,
-                                    <br> 7652 Bucharest,
-                                    <br> Romania
-                                </p>
-                            </div>
-                        </div>
-                        <div class="info info-horizontal">
-                            <div class="icon icon-primary">
-                                <i class="now-ui-icons tech_mobile"></i>
-                            </div>
-                            <div class="description">
-                                <h4 class="info-title">Give us a ring</h4>
-                                <p> Michael Jordan
-                                    <br> +40 762 321 762
-                                    <br> Mon - Fri, 8:00-22:00
-                                </p>
-                            </div>
-                        </div>
-                        <div class="info info-horizontal">
-                            <div class="icon icon-primary">
-                                <i class="business_briefcase-24 now-ui-icons"></i>
-                            </div>
-                            <div class="description">
-                                <h4 class="info-title">Legal Information</h4>
-                                <p> Creative Tim Ltd.
-                                    <br> VAT &middot; EN2341241
-                                    <br> IBAN &middot; EN8732ENGB2300099123
-                                    <br> Bank &middot; Great Britain Bank
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="big-map">
-        <google-map class="google-map" [options]="mapOptions">
-            <map-marker [position]="marker.position"></map-marker>
-         </google-map>
-    </div>
+  </div>
+  <div class="main">
+    <div class="contact-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 ml-auto mr-auto">
+            <h2 class="title">Send us a message</h2>
+            <div class="description mb-4">
+              Do you have questions about joining MASTRO? Interested in donating
+              or volunteering?
 
-    <footer class="footer footer-default ">
-        <div class="container">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="https://www.creative-tim.com">
-                            Creative Tim
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.creative-tim.com/about-us">
-                            About Us
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://blog.creative-tim.com">
-                            Blog
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.creative-tim.com/license">
-                            License
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="copyright">
-                © {{data | date: 'yyyy'}}, Designed by
-                <a href="https://www.invisionapp.com" target="_blank">Invision</a>. Coded by
-                <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+              <h4>We look forward to hearing from you!</h4>
+
+              <hr />
+
+              <div class="ml-auto mr-auto text-center">
+                <header class="text-large">JOIN US ON FACEBOOK</header>
+                <button class="btn btn-facebook">
+                  <i class="fa fa-facebook-square"></i>
+                </button>
+              </div>
             </div>
+          </div>
+          <div class="col-md-5 ml-auto mr-auto">
+            <form role="form" id="contact-form" method="post">
+              <label>Your name</label>
+              <div
+                class="input-group"
+                [ngClass]="{ 'input-group-focus': focus === true }"
+              >
+                <div class="input-group-prepend">
+                  <span class="input-group-text"
+                    ><i class="now-ui-icons users_circle-08"></i
+                  ></span>
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Name..."
+                  (focus)="focus = true"
+                  (blur)="focus = false"
+                />
+              </div>
+              <label>Email address</label>
+              <div
+                class="input-group"
+                [ngClass]="{ 'input-group-focus': focus1 === true }"
+              >
+                <div class="input-group-prepend">
+                  <span class="input-group-text"
+                    ><i class="now-ui-icons ui-1_email-85"></i
+                  ></span>
+                </div>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Email Here..."
+                  (focus)="focus1 = true"
+                  (blur)="focus1 = false"
+                />
+              </div>
+              <label>Phone</label>
+              <div
+                class="input-group"
+                [ngClass]="{ 'input-group-focus': focus2 === true }"
+              >
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="now-ui-icons tech_mobile"></i
+                  ></span>
+                </div>
+                <input
+                  type="text"
+                  placeholder="Number Here..."
+                  class="form-control"
+                  (focus)="focus2 = true"
+                  (blur)="focus2 = false"
+                />
+              </div>
+              <div class="form-group">
+                <label>Your message</label>
+                <textarea
+                  name="message"
+                  class="form-control"
+                  id="message"
+                  rows="6"
+                ></textarea>
+              </div>
+              <div class="submit text-center">
+                <input
+                  type="submit"
+                  class="btn btn-primary btn-raised btn-round"
+                  value="Contact Us"
+                />
+              </div>
+            </form>
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <div class="col-md-12 ml-auto">
+        <div class="">
+          <div class="description">
+            <h3 class="mt-0">Please Note:</h3>
+            <ul>
+              <li>
+                MASTRO is a not-for-profit 501(C)6 organization that is run
+                entirely by volunteers. This means our email and social media
+                pages are not manned 24/7. MASTRO also does not have a physical
+                office nor manned telephones, and we are therefore unable to t
+                ake requests for phone calls. We communicate with members
+                primarily thru email, in our private members-only Facebook
+                group, and in-person at our monthly meetings/events.
+                <strong>
+                  Our members and friends receive the most out of membership
+                  when they are engaged in the private Facebook group and attend
+                  our events!</strong
+                >
+              </li>
+              <li>
+                <strong
+                  >As a reminder, MASTRO is unable to provide information on
+                  specific properties or circumstances to either members or
+                  non-members, therefore we are unable to reply to individual
+                  messages about such matters.</strong
+                >
+                If you are looking for guidance, assistance, or clarity on a
+                specific issue related to your property, permit, or STR
+                eligibility, we suggest you contact the Codes Department or an
+                attorney. (You can find attorney contact information on our
+                Friends page.)
+              </li>
+              <li>
+                If you are trying to reach the MASTRO Board, please do not
+                message individual Board Members via Facebook, email, or phone.
+                If you have a question about your membership or joining the
+                Facebook group, please email manitobaSTR@gmail.com and you can
+                typically expect email responses within one business week.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

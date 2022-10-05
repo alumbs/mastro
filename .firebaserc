@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "mastro-d2e17": {
+      "hosting": {
+        "now-ui-kit-pro-angular": [
+          "mastro-d2e17"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "mastro-d2e17"
+  }
+}

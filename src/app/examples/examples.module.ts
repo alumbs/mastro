@@ -20,6 +20,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { RegisterComponent } from './register/register.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { GoogleMapsModule } from '@angular/google-maps';
+import { JoinusComponent } from './joinus/joinus.component';
 
 
 @NgModule({
@@ -32,11 +33,12 @@ import { GoogleMapsModule } from '@angular/google-maps';
         AngularMultiSelectModule,
         FormsModule,
         ImageUploadModule,
-        GoogleMapsModule 
+        GoogleMapsModule
     ],
     declarations: [
         ExamplesComponent,
         AboutusComponent,
+        JoinusComponent,
         BlogpostComponent,
         BlogpostsComponent,
         ContactusComponent,

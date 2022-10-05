@@ -1,0 +1,67 @@
+.section-about-us {
+    color: black;
+
+    .description {
+        color: black;
+    }
+
+    .image-container.image-left-bottom {
+        margin-top: 130px;
+    }
+}
+
+div.services {
+    padding-bottom: 0;
+    padding-top: 0;
+
+    div.row {
+        >div {
+            height: 15rem;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a,
+            h2 {
+                color: white;
+            }
+        }
+
+        >div.first {
+            background-color: #144c73;
+        }
+
+        >div.second {
+            background-color: #eaae6a;
+        }
+
+        >div.third {
+            background-color: #b23b37;
+        }
+    }
+}
+
+.footer {
+    background-image: url('../../../assets/img/bg19.jpg');
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    >h2 {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .footer-links {
+        text-align: center;
+        font-size: 1.5rem;
+
+    }
+}
+
+a.underline {
+    text-decoration: underline;
+}

@@ -18,19 +18,21 @@ import { ProfileComponent } from './examples/profile/profile.component';
 import { RegisterComponent } from './examples/register/register.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
 import { PricingComponent } from './examples/pricing/pricing.component';
+import { JoinusComponent } from './examples/joinus/joinus.component';
 
 const routes: Routes = [
-    { path: '', redirectTo: 'examples/landing', pathMatch: 'full' },
+    { path: '', redirectTo: 'landing', pathMatch: 'full' },
     { path: 'presentation', component: PresentationComponent },
     { path: 'components', component: ComponentsComponent },
     { path: 'sections', component: SectionsComponent },
     { path: 'nucleoicons', component: NucleoiconsComponent },
-    { path: 'examples/aboutus', component: AboutusComponent },
+    { path: 'aboutus', component: AboutusComponent },
+    { path: 'joinus', component: JoinusComponent },
     { path: 'examples/blogpost', component: BlogpostComponent },
     { path: 'examples/blogposts', component: BlogpostsComponent },
-    { path: 'examples/contactus', component: ContactusComponent },
+    { path: 'contactus', component: ContactusComponent },
     { path: 'examples/ecommerce', component: EcommerceComponent },
-    { path: 'examples/landing', component: LandingComponent },
+    { path: 'landing', component: LandingComponent },
     { path: 'examples/login', component: LoginComponent },
     { path: 'examples/pricing', component: PricingComponent },
     { path: 'examples/productpage', component: ProductpageComponent },
@@ -42,9 +44,7 @@ const routes: Routes = [
     imports: [
         CommonModule,
         BrowserModule,
-        RouterModule.forRoot(routes, {
-            useHash: true
-        })
+        RouterModule.forRoot(routes)
     ],
     exports: [
     ],
